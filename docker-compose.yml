@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  showcase:
+    build: .
+    container_name: showcase-all-in-one
+    ports:
+      - "8089:80"
+    volumes:
+      - ./web-bin:/var/www/showcase-website-service
+      - ./scipts-bin:/opt/scripts
+      - showcase_db_data:/persistent-db-data
+
+    environment:
+      - PORT=8089
+      - SUPPORT_EMAIL=test@example.com
+      - ENDSIGN=Best regards
+      - WELCOME_COMPANY_NAME=MyCompany
+      - FOOTER_CREDIT=MyFooter
+      - ADMIN_MAIL=admin@example.com
+    restart: always
+
+volumes:
+  showcase_db_data:

@@ -51,7 +51,8 @@ Vous pouvez, par exemple, utiliser **NGINX Proxy Manager**.
 * `ENDSIGN` — Texte affiché à la fin de l'e-mail en tant que signature (ex. : [Équipe Support]).  
 * `WELCOME_COMPANY_NAME` — Texte affiché dans le message de bienvenue de la page d’accueil.  
 * `FOOTER_CREDIT` — Nom affiché dans les crédits du pied de page.
-
+* `ADMIN_MAIL` — Nom affiché dans les crédits du pied de page.
+* `PORT` — Port a utiliser pour accéder a la page.
 ---
 
 ### 🔐 Niveaux de privilèges
